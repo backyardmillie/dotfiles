@@ -1,7 +1,7 @@
 eval "$(starship init bash)"
 fastfetch -c ~/.config/fastfetch/config-start.jsonc
-alias mfetch='hyfetch --ascii-file C:/Users/millie/.config/ascii-fetch/mfetch.txt'
-alias arfetch='hyfetch --ascii-file C:/Users/millie/.config/ascii-fetch/arfetch.txt'
-alias mikufetch='hyfetch --ascii-file C:/Users/millie/.config/ascii-fetch/mikufetch.txt'
+alias mfetch='hyfetch --ascii-file ~/.config/ascii-fetch/mfetch.txt'
+alias arfetch='hyfetch --ascii-file ~/.config/ascii-fetch/arfetch.txt'
+alias mikufetch='hyfetch --ascii-file ~/.config/ascii-fetch/mikufetch.txt'
 alias showtaskbar='~/nircmd/show-taskbar.bat'
 alias hidetaskbar='~/nircmd/hide-taskbar.bat'
