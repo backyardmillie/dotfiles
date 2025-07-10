@@ -1,0 +1,153 @@
+// Load with --load-config examples/2.jsonc
+// Note that you must replace the image path to an existing image to display it.
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+	"type": "file",
+	"source": "~/.config/ascii-fetch/mikufetch.txt",
+	"color": {
+	    "1": "#E2935B",
+	},
+        "padding": {
+            "top": 2
+        }
+    },
+    "display": {
+        "separator": "  ",
+	"color": {
+	    "separator": "#C8594F",
+	}
+    },
+    "modules": [
+        {
+            "type": "custom",
+            "format": "╔═",
+            "outputColor": "#E2935B",
+        },
+        {
+            "type": "title",
+            "format": "  {user-name-colored}{at-symbol-colored}{host-name-colored} ",
+            "color": {
+                "user": "#C8594F",
+                "at": "#E2935B",
+                "host": "#C8594F"
+            }
+        },
+        {
+            "type": "custom",
+            "format": "               ═╝",
+            "outputColor": "#E2935B",
+        },
+        {
+            "type": "os",
+            "key": " OS",
+            "keyColor": "#E2935B",
+            "format": "{2}"
+        },
+        {
+            "type": "os",
+            "key": "├", // Just get your distro's logo off nerdfonts.com
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "kernel",
+            "key": "├",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "packages",
+            "key": "├󰏖",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "shell",
+            "key": "└",
+            "keyColor": "#E2935B"
+        },
+        "break",
+
+        {
+            "type": "wm",
+	    "format": "{pretty-name}",
+            "key": " DE/WM",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "wmtheme",
+	    "format": "{result}",
+            "key": "├󰉼",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "terminal",
+            "key": "└",
+            "keyColor": "#E2935B"
+        },
+        "break",
+        {
+            "type": "host",
+            "key": "󰌢 PC",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "cpu",
+            "key": "├󰻠",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "gpu",
+            "key": "├󰍛",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "disk",
+	    "format": "{mountpoint} - {size-used} / {size-total} [{size-percentage}]% - {filesystem} [external={is-external}]",
+            "key": "├",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "memory",
+	    "format": "{used} / {total} [{percentage}]%",
+            "key": "├󰑭",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "swap",
+	    "format": "{used} / {total} [{percentage}]%",
+            "key": "├󰓡",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "display",
+	    "format": "{width}x{height} @ {refresh-rate} in {inch}\u0022",
+            "key": "├󰍹",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "uptime",
+            "key": "└󰅐",
+            "keyColor": "#E2935B"
+        },
+
+        "break",
+        {
+            "type": "sound",
+            "key": " SOUND",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "player",
+            "key": "├󰥠",
+            "keyColor": "#E2935B"
+        },
+        {
+            "type": "media",
+            "key": "└󰝚",
+            "keyColor": "#E2935B"
+        },
+
+        "break",
+        "colors"
+    ]
+}
