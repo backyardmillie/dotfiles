@@ -1,0 +1,419 @@
+/* 
+This is default and very simple styles file for Yasb. 
+For more information about configuration options, please visit the Wiki https://github.com/amnweb/yasb/wiki
+*/
+:root {
+    --mauve: #e7a6f7;
+    --red: #f38b94;
+    --yellow: #f9d3af;
+    --blue: #8994fa;
+    --lavender: #ceb4fe;
+    --text: #E2935B;
+    --subtext1: #bd9b9b;
+    --subtext0: #a37e7e;
+    --overlay2: #8b6767;
+    --overlay1: #795959;
+    --overlay0: #684a4a;
+    --surface2: #634444;
+    --surface1: #4b302f;
+    --surface0: #3a2423;
+    --base: #301e1d;
+    --crust: rgba(28, 17, 16, 0.92);
+    --accent: #C8594F;
+    --muted: #B9827F;
+}
+/* Global styles for ToolTip */
+QToolTip {
+    padding: 6px;
+    color: #f4d5cd;
+    font-size: 12px;
+    background-color: var(--base);
+    border: 2px solid var(--accent);
+    border-radius: 6px;
+}
+* {
+    font-size: 14px;
+    color: var(--text);
+    font-weight: 700;
+    font-family: "JetBrainsMono NFM";
+    margin: 0;
+    padding: 0;
+}
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+    background-color: var(--crust);
+    border-radius: 0px;
+    border: 2px solid var(--accent);
+}
+/* Global context menu style */
+.context-menu,
+.context-menu .menu-checkbox {
+    background-color: #202020;
+    border: none;
+    padding: 4px 0px;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.context-menu::right-arrow {
+    width: 8px;
+    height: 8px;
+    padding-right: 24px;
+}
+.context-menu::item,
+.context-menu .menu-checkbox {
+    background-color: transparent;
+    padding: 6px 12px;
+    margin: 2px 6px;
+    border-radius: 6px;
+    min-width: 100px;
+}
+
+.context-menu::item:selected,
+.context-menu .menu-checkbox:hover {
+    background-color: #3a3a3a;
+    color: #FFFFFF;
+}
+
+.context-menu::separator {
+    height: 1px;
+    background-color: #404040;
+    margin: 4px 8px;
+}
+.context-menu::item:disabled {
+    color: #666666;
+    background-color: transparent;
+}
+
+.context-menu .menu-checkbox .checkbox {
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Segoe UI'
+}
+.context-menu .submenu::item:disabled {
+    margin: 0;
+    padding-left: 16px;
+}
+.context-menu .menu-checkbox .checkbox:unchecked {
+    color: #999
+}
+.context-menu .menu-checkbox .checkbox::indicator {
+    width: 12px;
+    height: 12px;
+    margin-left: 0px;
+    margin-right: 8px;
+}
+.context-menu .menu-checkbox .checkbox::indicator:unchecked {
+    background: #444444;
+    border-radius: 2px;
+}
+.context-menu .menu-checkbox .checkbox::indicator:checked {
+    background: #007acc;
+    border-radius: 2px;
+}
+.context-menu .menu-checkbox .checkbox:focus {
+    outline: none;
+}
+
+.widget {
+    padding: 0 12px;
+    margin: 0;
+}
+.icon {
+    font-size: 16px;
+}
+.widget .label {
+    padding: 0px 2px;
+}
+.active-window-widget .widget-container .label {
+    color: var(--accent);
+}
+.active-window-widget .widget-container .label:hover {
+    color: var(--text);
+}
+.komorebi-active-layout {
+    padding: 0 4px 0 0;
+}
+.komorebi-active-layout .label {
+    font-weight: 600;
+    padding: 2px 0 0 0;
+}
+.apps-widget .widget-container {
+    background-color: var(--base);
+    margin: 3px 0 3px 0;
+    border-radius: 0px;
+    border: 1px solid var(--accent);
+}
+.komorebi-workspaces .widget-container,
+.komorebi-active-layout .widget-container {
+    background-color: var(--surface1);
+    margin: 3px 0 3px 0;
+    border: 1px solid var(--surface0);
+}
+.komorebi-workspaces .widget-container {
+    margin-left: 4px;
+}
+.komorebi-workspaces {
+    padding: 0 4px 0 0;
+}
+.komorebi-workspaces .offline-status {
+    color: var(--surface2);
+    font-size: 12px;
+    padding: 0 0 0 4px;
+    font-weight: 600;
+}
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    font-size: 12px;
+    color: var(--overlay1);
+    height: 28px;
+    width: 18px;
+}
+.komorebi-workspaces .ws-btn:hover {
+    color: var(--subtext1);
+}
+.komorebi-workspaces .ws-btn.populated {
+    color: transparent;
+    width: 8px;
+    height: 7px;
+    background-color: var(--accent);
+    margin: 0 4px;
+    font-size: 1px;
+}
+.komorebi-workspaces .ws-btn.active {
+    color: transparent;
+    background-color: var(--text);
+    width: 36px;
+    max-width: 36px;
+    height: 7px;
+    margin: 0 4px;
+}
+.komorebi-control-widget .widget-container .icon {
+    color: var(--accent);
+}
+.komorebi-control-widget .widget-container .icon:hover {
+    color: var(--text);
+}
+.komorebi-control-widget .label {
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 600;
+}
+.komorebi-control-menu {
+    background-color: var(--crust);
+    border: 2px solid var(--accent);
+}
+.komorebi-control-menu .button {
+    color: var(--accent);
+    padding: 8px 16px;
+    font-size: 32px;
+    background-color: var(--base);
+}
+.komorebi-control-menu .button.active {
+    color: var(--text);
+    background-color: var(--base);
+}
+.komorebi-control-menu .button:disabled,
+.komorebi-control-menu .button.active:disabled {
+    background-color: rgba(255, 255, 255, 0.01);
+    color: rgba(255, 255, 255, 0.2);
+}
+.komorebi-control-menu .footer .text {
+    font-size: 12px;
+    color: var(--accent);
+}
+.apps-widget {
+    padding: 0 4px 0 2px;
+}
+.apps-widget .label {
+    font-size: 14px;
+    padding: 0 2px;
+    color: var(--accent);
+}
+.apps-widget .label:hover {
+    color: var(--text);
+}
+
+.power-menu-widget .label {
+    color: var(--accent);
+    font-size: 13px;
+}
+.power-menu-widget .label:hover {
+    color: var(--text);
+    font-size: 13px;
+}
+.power-menu-popup {
+    background-color: transparent
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 8px;
+    background-color: var(--crust);
+    color: var(--text);
+    border-left: 4px solid rgba(28, 17, 16, 0);
+    border-right: 4px solid rgba(28, 17, 16, 0);
+    border-top: 4px solid rgba(28, 17, 16, 0);
+    border-bottom: 4px solid rgba(28, 17, 16, 0);
+    margin: 0px;
+}
+.power-menu-popup .button.hover {
+    background-color: var(--base);
+    border-left: 4px solid var(--base);
+    border-right: 4px solid var(--base);
+    border-top: 4px solid var(--base);
+    border-bottom: 4px solid var(--base);
+}
+
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--overlay2)
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--surface2)
+}
+
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+    color: var(--accent);
+    margin: 0;
+}
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: 4px;
+}
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--surface2);
+    font-weight: 600;
+}
+.microphone-widget {
+    padding: 0 6px 0 6px;
+}
+.microphone-widget .icon {
+    font-size: 18px;
+}
+.microphone-widget .icon {
+    color: var(--accent);
+}
+.microphone-widget .icon:hover {
+    color: var(--text);
+}
+.microphone-widget .label {
+    color: var(--accent);
+}
+.microphone-widget .label:hover {
+    color: var(--text);
+}
+.volume-widget .icon {
+    font-size: 17px;
+    color: var(--accent);
+    margin: 0px 2px 0 0;
+}
+.volume-widget .icon:hover {
+    font-size: 17px;
+    color: var(--text);
+    margin: 0px 2px 0 0;
+}
+.volume-widget .label {
+    color: var(--accent);
+}
+.volume-widget .label:hover {
+    color: var(--text);
+}
+.weather-widget,
+.volume-widget {
+    padding: 0 6px;
+}
+.weather-widget .icon {
+    font-size: 18px;
+    margin: 0 2px 1px 0;
+    color: var(--yellow);
+}
+.media-widget {
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+.media-widget .label {
+    color: var(--text);
+    padding: 0;
+    padding-right: 0;
+    font-size: 12px;
+}
+.media-widget .btn {
+    color: var(--accent);
+    padding: 0 4px;
+    margin: 0;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-weight: 400;
+    font-size: 20px;
+}
+.media-widget .btn:hover {
+    color: var(--text);
+}
+.media-widget .btn.play {
+    font-size: 24px;
+    color: var(--accent);
+}
+.media-widget .btn.play:hover {
+    color: var(--text);
+}
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: #6b3b37;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
+.home-widget {
+    padding: 0 4px 0 12px;
+}
+.home-widget .icon {
+    color: var(--accent);
+}
+.home-widget .icon:hover {
+    color: var(--text);
+}
+.home-menu {
+    background-color: var(--crust);
+    border-radius: 8px;
+}
+.home-menu .menu-item {
+    padding: 8px 48px 9px 16px;
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    color: var(--text);
+    font-weight: 600;
+}
+.home-menu .menu-item:hover {
+    background-color: rgba(158, 135, 128, 0.15);
+    color: #fff;
+}
+.home-menu .separator {
+    max-height: 1px;
+    background-color: rgba(158, 134, 128, 0.3);
+}
+.notification-widget {
+    padding: 0 0px 0 4px;
+}
+.notification-widget .icon {
+    font-size: 14px;
+}
+.notification-widget .icon.new-notification {
+    color: var(--blue);
+}
