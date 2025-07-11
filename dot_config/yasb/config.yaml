@@ -272,7 +272,6 @@ widgets:
       label: "{data}"
       app_list:
         - { icon: "\uf489", launch: "cmd /c wt" }
-        - { icon: "\ueb03", launch: "cmd /c Taskmgr" }
         - { icon: "\udb80\ude39",launch: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" }
   notifications:
     type: "yasb.notifications.NotificationsWidget"
