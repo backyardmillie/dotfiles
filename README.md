@@ -4,7 +4,7 @@
 Greetings, unexpected visitor! I welcome you to my humble dotfiles repository!
 I have titled the master theme of this repository: **Axaria**!
 
-![Axaria](/preview.png)
+![Axaria](/dot_config/preview.png)
 
 I manage my dotfiles with [**chezmoi**](https://github.com/twpayne/chezmoi).
 
